@@ -1,42 +1,90 @@
-<section class="connect-ludut">
-  <h2>Conecte-se com a LUDUT</h2>
+<section class="connect-viamodas" aria-label="Canais digitais da Via Modas">
+  <div class="connect-logo-wrap">
+    <img
+      src="https://raw.githubusercontent.com/Viamodas/conecte-se/refs/heads/main/logo_prime_130x130.png"
+      alt="Logo Via Modas"
+      class="connect-logo"
+      loading="lazy"
+      decoding="async"
+    >
+  </div>
+
+  <h2>Conecte-se com a Via Modas</h2>
   <p>Utilize nossos canais digitais abaixo</p>
 
   <div class="connect-buttons">
-    <a href="#" class="connect-btn">Acesse a loja online</a>
-    <button type="button" class="connect-btn connect-btn-toggle" id="openEquipeModal">
+    <button
+      type="button"
+      class="connect-btn connect-btn-toggle"
+      id="openEquipeModal"
+      aria-haspopup="dialog"
+      aria-controls="equipeModal"
+      aria-expanded="false"
+    >
       WhatsApp Loja Física
     </button>
-    <a href="https://www.google.com/maps/place/Via+Modas/@-8.0190261,-34.9117029,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab19b505127105:0xc5f2c6254871d70e!8m2!3d-8.0190314!4d-34.909128!16s%2Fg%2F11ckr50sl0?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D" class="connect-btn" target="_blank" rel="noopener noreferrer">
+
+    <a
+      href="https://www.google.com/maps/place/Via+Modas/@-8.0190261,-34.9117029,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab19b505127105:0xc5f2c6254871d70e!8m2!3d-8.0190314!4d-34.909128!16s%2Fg%2F11ckr50sl0?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D"
+      class="connect-btn"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Abrir localização da loja Via Modas no Google Maps"
+    >
       Localize nossa loja
+    </a>
+
+    <a
+      href="https://SEU-LINK-DA-LOJA-AQUI.com.br"
+      class="connect-btn"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Acessar loja online da Via Modas"
+    >
+      Acesse a loja online
     </a>
   </div>
 </section>
 
 <!-- MODAL -->
 <div class="lmx-modal-overlay" id="equipeModal" aria-hidden="true">
-  <div class="lmx-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
-    <button class="lmx-modal-close" id="closeEquipeModal" aria-label="Fechar">×</button>
+  <div
+    class="lmx-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitulo"
+    aria-describedby="modalDescricao"
+    tabindex="-1"
+  >
+    <button class="lmx-modal-close" id="closeEquipeModal" aria-label="Fechar modal">×</button>
 
     <header class="lmx-modal-header">
       <h2 class="lmx-modal-title" id="modalTitulo">Nossa Equipe</h2>
-      <p class="lmx-modal-subtitle">Fale direto com uma vendedora da loja física</p>
+      <p class="lmx-modal-subtitle" id="modalDescricao">Fale direto com uma vendedora da loja física</p>
     </header>
 
     <div class="lmx-grid">
-
       <article class="lmx-card" id="c1">
         <span class="lmx-badge">Loja física</span>
         <img
           class="lmx-avatar"
           src="https://raw.githubusercontent.com/Viamodas/conecte-se/refs/heads/main/WhatsApp%20Image%202026-03-14%20at%2012.05.32%20(1).jpeg"
-          alt="Lais">
+          alt="Lais"
+          loading="lazy"
+          decoding="async"
+        >
         <h3 class="lmx-name">Lais</h3>
         <p class="lmx-role">Consultora de vendas</p>
-        <a class="lmx-button" target="_blank" rel="noopener"
-           href="https://wa.me/5581985326226?text=Oi%21%20Vim%20pelo%20link%20da%20bio%20da%20Linda%20Mo%C3%A7a%20Exclusive%20%F0%9F%92%96&utm_source=link_bio&utm_medium=whatsapp&utm_campaign=lais"
-           data-vendedora="Lais">
-          <span class="lmx-wa-icon"></span> Falar com vendedora
+        <a
+          class="lmx-button"
+          target="_blank"
+          rel="noopener"
+          href="https://wa.me/5581985326226?text=Oi%21%20Vim%20pelo%20link%20da%20bio%20da%20Via%20Modas%20%F0%9F%92%96&utm_source=link_bio&utm_medium=whatsapp&utm_campaign=lais"
+          data-vendedora="Lais"
+          aria-label="Falar com a vendedora Lais no WhatsApp"
+        >
+          <span class="lmx-wa-icon" aria-hidden="true"></span>
+          Falar com vendedora
         </a>
       </article>
 
@@ -45,13 +93,22 @@
         <img
           class="lmx-avatar"
           src="https://raw.githubusercontent.com/Viamodas/conecte-se/refs/heads/main/WhatsApp%20Image%202026-03-14%20at%2012.05.32.jpeg"
-          alt="Mariana">
+          alt="Mariana"
+          loading="lazy"
+          decoding="async"
+        >
         <h3 class="lmx-name">Mariana</h3>
         <p class="lmx-role">Consultora de vendas</p>
-        <a class="lmx-button" target="_blank" rel="noopener"
-           href="https://wa.me/5581984457684?text=Oi%21%20Vim%20pelo%20link%20da%20bio%20da%20Linda%20Mo%C3%A7a%20Exclusive%20%F0%9F%92%96&utm_source=link_bio&utm_medium=whatsapp&utm_campaign=mariana"
-           data-vendedora="Mariana">
-          <span class="lmx-wa-icon"></span> Falar com vendedora
+        <a
+          class="lmx-button"
+          target="_blank"
+          rel="noopener"
+          href="https://wa.me/5581984457684?text=Oi%21%20Vim%20pelo%20link%20da%20bio%20da%20Via%20Modas%20%F0%9F%92%96&utm_source=link_bio&utm_medium=whatsapp&utm_campaign=mariana"
+          data-vendedora="Mariana"
+          aria-label="Falar com a vendedora Mariana no WhatsApp"
+        >
+          <span class="lmx-wa-icon" aria-hidden="true"></span>
+          Falar com vendedora
         </a>
       </article>
 
@@ -60,16 +117,24 @@
         <img
           class="lmx-avatar"
           src="https://raw.githubusercontent.com/Viamodas/conecte-se/refs/heads/main/WhatsApp%20Image%202026-03-14%20at%2012.05.33.jpeg"
-          alt="Mayara">
+          alt="Mayara"
+          loading="lazy"
+          decoding="async"
+        >
         <h3 class="lmx-name">Mayara</h3>
         <p class="lmx-role">Consultora de vendas</p>
-        <a class="lmx-button" target="_blank" rel="noopener"
-           href="https://wa.me/5581983320339?text=Oi%21%20Vim%20pelo%20link%20da%20bio%20da%20Linda%20Mo%C3%A7a%20Exclusive%20%F0%9F%92%96&utm_source=link_bio&utm_medium=whatsapp&utm_campaign=mayara"
-           data-vendedora="Mayara">
-          <span class="lmx-wa-icon"></span> Falar com vendedora
+        <a
+          class="lmx-button"
+          target="_blank"
+          rel="noopener"
+          href="https://wa.me/5581983320339?text=Oi%21%20Vim%20pelo%20link%20da%20bio%20da%20Via%20Modas%20%F0%9F%92%96&utm_source=link_bio&utm_medium=whatsapp&utm_campaign=mayara"
+          data-vendedora="Mayara"
+          aria-label="Falar com a vendedora Mayara no WhatsApp"
+        >
+          <span class="lmx-wa-icon" aria-hidden="true"></span>
+          Falar com vendedora
         </a>
       </article>
-
     </div>
   </div>
 </div>
@@ -78,17 +143,27 @@
   :root{
     --bg:#ffffff;
     --card-bg:#ffffff;
-    --text:#1b1b1b;
-    --muted:#5d5d5d;
+    --text:#161616;
+    --muted:#666666;
     --brand:#000000;
-    --brand-hover:#28a745;
-    --radius:18px;
-    --shadow-sm:0 4px 18px rgba(0,0,0,.06);
-    --shadow-md:0 12px 30px rgba(0,0,0,.10);
+    --brand-soft:#111111;
+    --brand-hover:#25d366;
+    --overlay:rgba(0,0,0,.68);
+    --radius:22px;
+    --radius-sm:16px;
+    --shadow-sm:0 10px 30px rgba(0,0,0,.06);
+    --shadow-md:0 18px 45px rgba(0,0,0,.12);
+    --shadow-lg:0 30px 70px rgba(0,0,0,.22);
     --container:min(1200px,92vw);
   }
 
-  *{box-sizing:border-box;}
+  *{
+    box-sizing:border-box;
+  }
+
+  html{
+    scroll-behavior:smooth;
+  }
 
   body{
     margin:0;
@@ -98,23 +173,45 @@
     -webkit-tap-highlight-color:transparent;
   }
 
-  .connect-ludut{
+  body.modal-open{
+    overflow:hidden;
+    touch-action:none;
+  }
+
+  .connect-viamodas{
     max-width:720px;
     margin:0 auto;
-    padding:40px 15px;
+    padding:42px 16px;
     text-align:center;
   }
 
-  .connect-ludut h2{
-    font-size:28px;
-    font-weight:800;
-    margin-bottom:10px;
+  .connect-logo-wrap{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:18px;
   }
 
-  .connect-ludut p{
+  .connect-logo{
+    width:130px;
+    height:130px;
+    max-width:100%;
+    object-fit:contain;
+    display:block;
+  }
+
+  .connect-viamodas h2{
+    margin:0 0 10px;
+    font-size:30px;
+    font-weight:800;
+    letter-spacing:-0.02em;
+  }
+
+  .connect-viamodas p{
+    margin:0 0 30px;
     font-size:15px;
-    color:#444;
-    margin-bottom:30px;
+    line-height:1.5;
+    color:var(--muted);
   }
 
   .connect-buttons{
@@ -124,32 +221,47 @@
   }
 
   .connect-btn{
-    background:#000;
-    color:#fff;
-    text-decoration:none;
-    padding:16px 20px;
-    border-radius:40px;
-    font-size:15px;
-    font-weight:600;
-    transition:all 0.2s ease;
+    appearance:none;
     border:none;
-    cursor:pointer;
+    outline:none;
+    width:100%;
+    min-height:56px;
+    padding:16px 22px;
+    border-radius:999px;
+    background:linear-gradient(180deg, #111111 0%, #000000 100%);
+    color:#ffffff;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:.01em;
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    width:100%;
+    text-align:center;
+    cursor:pointer;
+    transition:transform .22s ease, box-shadow .22s ease, background .22s ease;
+    box-shadow:0 10px 24px rgba(0,0,0,.12);
   }
 
   .connect-btn:hover{
-    background:#222;
     transform:translateY(-2px);
+    box-shadow:0 16px 32px rgba(0,0,0,.16);
+    background:linear-gradient(180deg, #1b1b1b 0%, #000000 100%);
   }
 
-  /* MODAL */
+  .connect-btn:focus-visible,
+  .lmx-button:focus-visible,
+  .lmx-modal-close:focus-visible{
+    outline:3px solid rgba(37,211,102,.35);
+    outline-offset:3px;
+  }
+
   .lmx-modal-overlay{
     position:fixed;
     inset:0;
-    background:rgba(0,0,0,.65);
+    background:var(--overlay);
+    backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
     display:flex;
     align-items:center;
     justify-content:center;
@@ -157,7 +269,7 @@
     opacity:0;
     visibility:hidden;
     pointer-events:none;
-    transition:opacity .3s ease, visibility .3s ease;
+    transition:opacity .28s ease, visibility .28s ease;
     z-index:9999;
   }
 
@@ -171,13 +283,14 @@
     width:min(1100px, 100%);
     max-height:90vh;
     overflow-y:auto;
-    background:#fff;
-    border-radius:24px;
-    box-shadow:0 20px 60px rgba(0,0,0,.25);
-    padding:28px;
+    background:#ffffff;
+    border-radius:28px;
+    box-shadow:var(--shadow-lg);
+    padding:30px;
     position:relative;
     transform:translateY(20px) scale(.98);
-    transition:transform .3s ease;
+    transition:transform .28s ease;
+    border:1px solid rgba(0,0,0,.05);
   }
 
   .lmx-modal-overlay.active .lmx-modal{
@@ -187,40 +300,45 @@
   .lmx-modal-close{
     position:absolute;
     top:14px;
-    right:16px;
-    width:42px;
-    height:42px;
+    right:14px;
+    width:44px;
+    height:44px;
     border:none;
     border-radius:50%;
     background:#f3f3f3;
-    color:#000;
-    font-size:28px;
+    color:#000000;
+    font-size:30px;
     line-height:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     cursor:pointer;
-    transition:.2s ease;
+    transition:transform .2s ease, background-color .2s ease;
   }
 
   .lmx-modal-close:hover{
-    background:#e7e7e7;
+    background:#e9e9e9;
     transform:scale(1.05);
   }
 
   .lmx-modal-header{
     text-align:center;
-    margin-bottom:24px;
-    padding-top:8px;
+    margin-bottom:26px;
+    padding-top:6px;
   }
 
   .lmx-modal-title{
-    font-size:30px;
-    font-weight:700;
     margin:0 0 8px;
+    font-size:31px;
+    font-weight:800;
+    letter-spacing:-0.02em;
   }
 
   .lmx-modal-subtitle{
+    margin:0;
     font-size:15px;
     color:var(--muted);
-    margin:0;
+    line-height:1.5;
   }
 
   .lmx-grid{
@@ -232,16 +350,17 @@
   }
 
   .lmx-card{
-    background:var(--card-bg);
+    background:linear-gradient(180deg, #ffffff 0%, #fcfcfc 100%);
     border-radius:var(--radius);
     box-shadow:var(--shadow-sm);
     text-align:center;
     padding:24px 20px 26px;
-    transition:transform .3s ease, box-shadow .3s ease;
+    transition:transform .28s ease, box-shadow .28s ease;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:flex-start;
+    border:1px solid rgba(0,0,0,.05);
   }
 
   .lmx-card:hover{
@@ -250,12 +369,15 @@
   }
 
   .lmx-badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
     background:var(--brand);
-    color:#fff;
+    color:#ffffff;
     font-size:12px;
-    padding:6px 12px;
+    font-weight:700;
+    padding:7px 12px;
     border-radius:999px;
-    display:inline-block;
     margin-bottom:14px;
   }
 
@@ -267,20 +389,22 @@
     object-position:center top;
     margin:0 auto 14px;
     display:block;
-    box-shadow:0 8px 20px rgba(0,0,0,0.12);
-    border:3px solid #fff;
+    box-shadow:0 10px 24px rgba(0,0,0,.12);
+    border:3px solid #ffffff;
+    background:#f3f3f3;
   }
 
   .lmx-name{
-    font-size:19px;
-    font-weight:700;
     margin:8px 0 4px;
+    font-size:19px;
+    font-weight:800;
   }
 
   .lmx-role{
+    margin:0 0 18px;
     font-size:14px;
     color:var(--muted);
-    margin:0 0 18px;
+    line-height:1.4;
   }
 
   .lmx-button{
@@ -288,38 +412,50 @@
     align-items:center;
     justify-content:center;
     gap:8px;
-    text-decoration:none;
-    color:#fff;
-    background:var(--brand);
+    width:100%;
+    max-width:230px;
+    min-height:48px;
     padding:13px 22px;
     border-radius:999px;
+    text-decoration:none;
+    color:#ffffff;
+    background:linear-gradient(180deg, #111111 0%, #000000 100%);
     font-weight:700;
     font-size:14px;
-    min-height:46px;
-    width:100%;
-    max-width:220px;
-    transition:transform .2s ease, background-color .2s ease;
-    animation:pulseGreen 2.2s infinite ease-in-out;
+    transition:transform .2s ease, background-color .2s ease, box-shadow .2s ease;
+    animation:pulseGreen 2.3s infinite ease-in-out;
+    box-shadow:0 10px 22px rgba(0,0,0,.14);
   }
 
   @keyframes pulseGreen{
-    0%{transform:scale(1); background-color:var(--brand);}
-    50%{transform:scale(1.05); background-color:var(--brand-hover);}
-    100%{transform:scale(1); background-color:var(--brand);}
+    0%{
+      transform:scale(1);
+      background:linear-gradient(180deg, #111111 0%, #000000 100%);
+    }
+    50%{
+      transform:scale(1.04);
+      background:linear-gradient(180deg, #25d366 0%, #1fb85a 100%);
+    }
+    100%{
+      transform:scale(1);
+      background:linear-gradient(180deg, #111111 0%, #000000 100%);
+    }
   }
 
   .lmx-button:hover{
-    transform:scale(1.05);
-    background:var(--brand-hover);
+    transform:scale(1.04);
+    box-shadow:0 14px 28px rgba(0,0,0,.18);
+    background:linear-gradient(180deg, #25d366 0%, #1fb85a 100%);
   }
 
   .lmx-wa-icon{
     width:18px;
     height:18px;
+    flex:0 0 18px;
     display:inline-block;
     background:currentColor;
     -webkit-mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.52 3.48A11.94 11.94 0 0012.06 0C5.49.03.18 5.34.21 11.9a11.74 11.74 0 001.51 5.86L0 24l6.4-1.66a11.93 11.93 0 005.66 1.44h.01c6.57 0 11.88-5.31 11.91-11.88a11.78 11.78 0 00-3.46-8.42z"/></svg>') center/contain no-repeat;
-            mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.52 3.48A11.94 11.94 0 0012.06 0C5.49.03.18 5.34.21 11.9a11.74 11.74 0 001.51 5.86L0 24l6.4-1.66a11.93 11.93 0 005.66 1.44h.01c6.57 0 11.88-5.31 11.91-11.88a11.78 11.78 0 00-3.46-8.42z"/></svg>') center/contain no-repeat;
+    mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.52 3.48A11.94 11.94 0 0012.06 0C5.49.03.18 5.34.21 11.9a11.74 11.74 0 001.51 5.86L0 24l6.4-1.66a11.93 11.93 0 005.66 1.44h.01c6.57 0 11.88-5.31 11.91-11.88a11.78 11.78 0 00-3.46-8.42z"/></svg>') center/contain no-repeat;
   }
 
   @media (max-width: 991px){
@@ -329,22 +465,28 @@
   }
 
   @media (max-width: 768px){
-    .connect-ludut{
-      padding:30px 15px;
+    .connect-viamodas{
+      padding:32px 15px;
     }
 
-    .connect-ludut h2{
-      font-size:24px;
+    .connect-logo{
+      width:110px;
+      height:110px;
+    }
+
+    .connect-viamodas h2{
+      font-size:25px;
     }
 
     .connect-btn{
+      min-height:52px;
       font-size:14px;
-      padding:15px;
+      padding:15px 18px;
     }
 
     .lmx-modal{
       padding:22px 16px 18px;
-      border-radius:20px;
+      border-radius:22px;
     }
 
     .lmx-modal-title{
@@ -353,6 +495,11 @@
   }
 
   @media (max-width: 640px){
+    .connect-logo{
+      width:96px;
+      height:96px;
+    }
+
     .lmx-grid{
       grid-template-columns:1fr;
       gap:18px;
@@ -360,6 +507,7 @@
 
     .lmx-card{
       padding:22px 18px 24px;
+      border-radius:var(--radius-sm);
     }
 
     .lmx-avatar{
@@ -374,42 +522,94 @@
     .lmx-modal-close{
       top:10px;
       right:10px;
-      width:38px;
-      height:38px;
+      width:40px;
+      height:40px;
       font-size:24px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *,
+    *::before,
+    *::after{
+      animation:none !important;
+      transition:none !important;
+      scroll-behavior:auto !important;
     }
   }
 </style>
 
 <script>
-  const openEquipeModal = document.getElementById('openEquipeModal');
-  const closeEquipeModal = document.getElementById('closeEquipeModal');
-  const equipeModal = document.getElementById('equipeModal');
+  (function () {
+    const openEquipeModal = document.getElementById('openEquipeModal');
+    const closeEquipeModal = document.getElementById('closeEquipeModal');
+    const equipeModal = document.getElementById('equipeModal');
+    const modalDialog = equipeModal.querySelector('.lmx-modal');
 
-  function abrirModalEquipe() {
-    equipeModal.classList.add('active');
-    equipeModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  }
+    let lastFocusedElement = null;
 
-  function fecharModalEquipe() {
-    equipeModal.classList.remove('active');
-    equipeModal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-  }
-
-  openEquipeModal.addEventListener('click', abrirModalEquipe);
-  closeEquipeModal.addEventListener('click', fecharModalEquipe);
-
-  equipeModal.addEventListener('click', function(e) {
-    if (e.target === equipeModal) {
-      fecharModalEquipe();
+    function getFocusableElements() {
+      return modalDialog.querySelectorAll(
+        'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])'
+      );
     }
-  });
 
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && equipeModal.classList.contains('active')) {
-      fecharModalEquipe();
+    function abrirModalEquipe() {
+      lastFocusedElement = document.activeElement;
+      equipeModal.classList.add('active');
+      equipeModal.setAttribute('aria-hidden', 'false');
+      openEquipeModal.setAttribute('aria-expanded', 'true');
+      document.body.classList.add('modal-open');
+
+      setTimeout(() => {
+        closeEquipeModal.focus();
+      }, 30);
     }
-  });
+
+    function fecharModalEquipe() {
+      equipeModal.classList.remove('active');
+      equipeModal.setAttribute('aria-hidden', 'true');
+      openEquipeModal.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('modal-open');
+
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+    }
+
+    function trapFocus(event) {
+      if (!equipeModal.classList.contains('active') || event.key !== 'Tab') return;
+
+      const focusableElements = getFocusableElements();
+      if (!focusableElements.length) return;
+
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (event.shiftKey && document.activeElement === firstElement) {
+        event.preventDefault();
+        lastElement.focus();
+      } else if (!event.shiftKey && document.activeElement === lastElement) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    }
+
+    openEquipeModal.addEventListener('click', abrirModalEquipe);
+    closeEquipeModal.addEventListener('click', fecharModalEquipe);
+
+    equipeModal.addEventListener('click', function (event) {
+      if (event.target === equipeModal) {
+        fecharModalEquipe();
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && equipeModal.classList.contains('active')) {
+        fecharModalEquipe();
+      }
+
+      trapFocus(event);
+    });
+  })();
 </script>
