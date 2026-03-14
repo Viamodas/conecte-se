@@ -46,7 +46,6 @@
   </div>
 </section>
 
-<!-- MODAL -->
 <div class="lmx-modal-overlay" id="equipeModal" aria-hidden="true">
   <div
     class="lmx-modal"
@@ -147,9 +146,8 @@
     --muted:#666666;
     --brand:#000000;
     --brand-hover:#25d366;
-    --overlay:rgba(0,0,0,.68);
+    --overlay:rgba(0,0,0,.72);
     --radius:22px;
-    --radius-sm:16px;
     --shadow-sm:0 10px 30px rgba(0,0,0,.06);
     --shadow-md:0 18px 45px rgba(0,0,0,.12);
     --shadow-lg:0 30px 70px rgba(0,0,0,.22);
@@ -178,7 +176,7 @@
 
   .connect-viamodas{
     width:100%;
-    max-width:720px;
+    max-width:760px;
     margin:0 auto;
     padding:42px 16px 36px;
     text-align:center;
@@ -203,8 +201,8 @@
     margin:0 0 10px;
     font-size:30px;
     font-weight:800;
-    letter-spacing:-0.02em;
     line-height:1.15;
+    letter-spacing:-0.02em;
   }
 
   .connect-viamodas p{
@@ -261,14 +259,14 @@
     position:fixed;
     inset:0;
     width:100vw;
-    height:100vh;
+    height:100dvh;
     background:var(--overlay);
     backdrop-filter:blur(6px);
     -webkit-backdrop-filter:blur(6px);
     display:flex;
     align-items:center;
     justify-content:center;
-    padding:12px;
+    padding:16px;
     opacity:0;
     visibility:hidden;
     pointer-events:none;
@@ -285,7 +283,7 @@
   .lmx-modal{
     width:100%;
     max-width:1100px;
-    max-height:92vh;
+    max-height:92dvh;
     overflow-y:auto;
     background:#ffffff;
     border-radius:28px;
@@ -318,6 +316,7 @@
     justify-content:center;
     cursor:pointer;
     transition:transform .2s ease, background-color .2s ease;
+    z-index:2;
   }
 
   .lmx-modal-close:hover{
@@ -335,8 +334,8 @@
     margin:0 0 8px;
     font-size:31px;
     font-weight:800;
-    letter-spacing:-0.02em;
     line-height:1.15;
+    letter-spacing:-0.02em;
   }
 
   .lmx-modal-subtitle{
@@ -473,16 +472,17 @@
     .connect-viamodas{
       width:100%;
       max-width:100%;
-      padding:24px 16px 32px;
+      margin:0;
+      padding:24px 12px 28px;
     }
 
     .connect-logo-wrap{
-      margin-bottom:14px;
+      margin-bottom:12px;
     }
 
     .connect-logo{
-      width:120px;
-      height:120px;
+      width:118px;
+      height:118px;
     }
 
     .connect-viamodas h2{
@@ -492,41 +492,45 @@
 
     .connect-viamodas p{
       font-size:15px;
-      margin-bottom:24px;
+      margin-bottom:22px;
     }
 
     .connect-buttons{
-      gap:14px;
+      gap:12px;
     }
 
     .connect-btn{
       width:100%;
-      min-height:56px;
+      min-height:58px;
       font-size:15px;
-      padding:16px 18px;
+      padding:16px 16px;
+      border-radius:18px;
     }
 
     .lmx-modal-overlay{
       padding:0;
-      align-items:flex-end;
+      align-items:stretch;
+      justify-content:stretch;
     }
 
     .lmx-modal{
-      width:100%;
-      max-width:100%;
-      max-height:95vh;
+      width:100vw;
+      max-width:100vw;
+      height:100dvh;
+      max-height:100dvh;
       margin:0;
-      border-radius:22px 22px 0 0;
-      padding:22px 16px 24px;
+      border-radius:0;
+      padding:56px 16px 24px;
+      overflow-y:auto;
     }
 
     .lmx-modal-header{
       margin-bottom:20px;
-      padding-top:4px;
+      padding-top:0;
     }
 
     .lmx-modal-title{
-      font-size:26px;
+      font-size:28px;
       line-height:1.2;
     }
 
@@ -542,6 +546,7 @@
     .lmx-card{
       width:100%;
       padding:22px 16px 24px;
+      border-radius:18px;
     }
 
     .lmx-avatar{
@@ -560,58 +565,59 @@
     .lmx-button{
       width:100%;
       max-width:100%;
-      min-height:50px;
+      min-height:52px;
       font-size:14px;
     }
 
     .lmx-modal-close{
+      position:fixed;
       top:10px;
       right:10px;
-      width:40px;
-      height:40px;
+      width:42px;
+      height:42px;
       font-size:24px;
     }
   }
 
-  @media (max-width: 640px){
+  @media (max-width: 480px){
     .connect-viamodas{
-      padding:22px 14px 30px;
+      padding:20px 10px 26px;
     }
 
     .connect-logo{
-      width:110px;
-      height:110px;
+      width:104px;
+      height:104px;
     }
 
     .connect-viamodas h2{
-      font-size:26px;
+      font-size:25px;
     }
 
     .connect-viamodas p{
       font-size:14px;
     }
 
+    .connect-btn{
+      min-height:56px;
+      font-size:14px;
+      padding:15px 14px;
+    }
+
     .lmx-modal{
-      padding:20px 14px 22px;
+      padding:54px 12px 20px;
     }
 
     .lmx-grid{
-      grid-template-columns:1fr;
       gap:14px;
     }
 
     .lmx-card{
       padding:20px 14px 22px;
-      border-radius:18px;
     }
 
     .lmx-avatar{
-      width:104px;
-      height:104px;
-    }
-
-    .lmx-button{
-      max-width:100%;
+      width:100px;
+      height:100px;
     }
   }
 
